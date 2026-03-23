@@ -1,27 +1,24 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SANYO | Sasha's World</title>
+    <title>SANYO | Sasha's Website</title>
     <style>
-        /* 1. Global Aesthetic Styles */
         body {
             margin: 0;
             padding: 0;
             min-height: 100vh;
-            /* Lavender Sunset Gradient */
             background: linear-gradient(135deg, #e0c3fc 0%, #fbc2eb 100%);
             background-attachment: fixed;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #4a4a4a;
+            color: #333;
             display: flex;
             justify-content: center;
-            align-items: center;
         }
 
-        /* 2. The Glass Card Container */
         .glass-card {
-            background: rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
             border-radius: 30px;
@@ -29,83 +26,59 @@
             width: 90%;
             max-width: 600px;
             margin: 50px 20px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.3);
             text-align: center;
         }
 
-        h1 { color: #6a4c93; letter-spacing: -1px; }
-        p { line-height: 1.6; }
-
-        /* 3. Image Styling */
+        h1 { color: #6a4c93; margin-bottom: 20px; }
+        p { line-height: 1.6; font-size: 1.1em; }
+        
         img {
             width: 100%;
-            max-width: 500px;
-            height: auto;
             border-radius: 20px;
             margin: 20px 0;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
         }
-        img:hover { transform: scale(1.02); }
 
-        /* 4. The Aesthetic Form */
         .contact-form {
             text-align: left;
-            margin-top: 40px;
-            background: rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.5);
             padding: 25px;
             border-radius: 20px;
+            margin-top: 30px;
         }
 
         input, textarea {
             width: 100%;
             padding: 12px;
-            margin: 10px 0 20px 0;
-            border: none;
+            margin: 10px 0 15px 0;
+            border: 1px solid #ddd;
             border-radius: 10px;
-            background: white;
-            box-sizing: border-box; /* Fixes padding issues */
-            font-size: 14px;
+            display: block;
         }
 
         .submit-btn {
-            background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+            background: #a18cd1;
             color: white;
             border: none;
-            padding: 15px;
+            padding: 12px;
             width: 100%;
             border-radius: 10px;
             font-weight: bold;
             cursor: pointer;
-            transition: 0.3s;
         }
-        .submit-btn:hover { opacity: 0.9; transform: translateY(-2px); }
 
-        /* 5. Back to Top Button */
         #backToTop {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: white;
-            color: #a18cd1;
-            border: none;
-            width: 50px;
-            height: 50px;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
             border-radius: 50%;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: none;
+            background: white;
             cursor: pointer;
-            display: none; /* Hidden by default */
-            font-size: 20px;
-            transition: 0.3s;
-        }
-
-        /* 6. Footer/Contact Info */
-        .contact-footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(0,0,0,0.05);
-            font-size: 0.9em;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
     </style>
 </head>
@@ -113,60 +86,50 @@
 
     <div class="glass-card">
         <h1>My personal website: SANYO</h1>
+        
         <p>Hello, my name is <b>Sasha</b>. Today, the coolest friend I've ever had, <b>Cyril Baraka</b>, created a website for me!</p>
 
-        <a href="personal.html" style="color: #9b59b6; font-weight: bold; text-decoration: none;">More info about me...</a>
+        <p>Here is more info about my amazing self:</p>
+        <a href="personal.html" style="color: #9b59b6; font-weight: bold;">More info...</a>
+
+        <hr style="opacity: 0.2; margin: 30px 0;">
 
         <p><i>Here is an interesting image of me being very cool</i></p>
-        <img src="https://lh3.googleusercontent.com/u/0/d/1o3GZScLJTf5SLffcuTKgDb6GIH__SxDk" alt="Sasha 1.0">
+        <img src="https://lh3.googleusercontent.com/u/0/d/1o3GZScLJTf5SLffcuTKgDb6GIH__SxDk" alt="Sasha1.0">
 
         <p><i>Here is another image of me coupled up with my man</i></p>
         <img src="https://drive.google.com/thumbnail?id=1KLbElehlNOm20UO87IJbYYQ-_4aeLD-8&sz=w1000" alt="Sasha 2.0">
 
         <div class="contact-form">
-            <h2 style="text-align: center; font-size: 1.2em;">Send a Vibe ✨</h2>
+            <h2 style="text-align: center; font-size: 1.2em;">Send a Message ✨</h2>
             <form id="sashaForm">
-                <label>Name</label>
-                <input type="text" id="userName" placeholder="Your name..." required>
-                
-                <label>Message</label>
-                <textarea id="userMessage" placeholder="Say something sweet..." required style="height: 100px;"></textarea>
-                
-                <button type="submit" class="submit-btn">Send Message 🚀</button>
+                <input type="text" id="userName" placeholder="Your name" required>
+                <textarea id="userMessage" placeholder="Your message" required style="height: 80px;"></textarea>
+                <button type="submit" class="submit-btn">Send 🚀</button>
             </form>
         </div>
 
-        <div class="contact-footer">
-            <h3>How to contact me</h3>
+        <div style="margin-top: 30px; border-top: 1px solid #ddd; padding-top: 20px;">
+            <h2>How to contact me</h2>
             <p>Email: <b>machajinasanyonyois@gmail.com</b></p>
             <p>Instagram: <b>@_.sash.uhh_</b></p>
             <p>Phone: <b>0798765432</b></p>
         </div>
     </div>
 
-    <button id="backToTop" title="Go to top">↑</button>
+    <button id="backToTop">↑</button>
 
     <script>
-        // Form Success Pop-up
         document.getElementById('sashaForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            const name = document.getElementById('userName').value;
-            alert("Yay " + name + "! Your message was sent successfully. ✨");
+            alert("Yay " + document.getElementById('userName').value + "! Sent successfully. ✨");
             this.reset();
         });
 
-        // Back to Top Logic
-        const topBtn = document.getElementById("backToTop");
-        window.onscroll = function() {
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                topBtn.style.display = "block";
-            } else {
-                topBtn.style.display = "none";
-            }
-        };
-        topBtn.onclick = function() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        };
+        const btn = document.getElementById("backToTop");
+        window.onscroll = () => { btn.style.display = window.scrollY > 300 ? "block" : "none"; };
+        btn.onclick = () => window.scrollTo({top: 0, behavior: 'smooth'});
     </script>
+
 </body>
 </html>
